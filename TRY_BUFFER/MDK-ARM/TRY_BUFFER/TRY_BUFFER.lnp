@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"try_buffer\startup_stm32f446xx.o"
+"try_buffer\main.o"
+"try_buffer\stm32f4xx_it.o"
+"try_buffer\stm32f4xx_hal_msp.o"
+"try_buffer\stm32f4xx_hal_tim.o"
+"try_buffer\stm32f4xx_hal_tim_ex.o"
+"try_buffer\stm32f4xx_hal_uart.o"
+"try_buffer\stm32f4xx_hal_rcc.o"
+"try_buffer\stm32f4xx_hal_rcc_ex.o"
+"try_buffer\stm32f4xx_hal_flash.o"
+"try_buffer\stm32f4xx_hal_flash_ex.o"
+"try_buffer\stm32f4xx_hal_flash_ramfunc.o"
+"try_buffer\stm32f4xx_hal_gpio.o"
+"try_buffer\stm32f4xx_hal_dma_ex.o"
+"try_buffer\stm32f4xx_hal_dma.o"
+"try_buffer\stm32f4xx_hal_pwr.o"
+"try_buffer\stm32f4xx_hal_pwr_ex.o"
+"try_buffer\stm32f4xx_hal_cortex.o"
+"try_buffer\stm32f4xx_hal.o"
+"try_buffer\stm32f4xx_hal_exti.o"
+"try_buffer\system_stm32f4xx.o"
+--strict --scatter "TRY_BUFFER\TRY_BUFFER.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TRY_BUFFER.map" -o TRY_BUFFER\TRY_BUFFER.axf
